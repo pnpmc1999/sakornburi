@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+    <!--Import Jquery-->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Import Font-->
+    <link rel="stylesheet" href="css/font.css">
+
+    <!--Import Style-->
+    <link rel="stylesheet" href="css/edit.css">
+
+    <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.collapsible').collapsible();
+
+        //เมนูหลักที่ 1 ข้อมูลพื้นฐาน
+       
+        $("#main1").click(function(){
+          $(".sub1").toggle();
+        });
+
+        //เมนูหลักที่ 2 ข้อมูลมรดกวัฒนธรรม
+        $(".sub2").hide();
+        $("#main2").click(function(){
+          $(".sub2").toggle();
+        });
+
+         //เมนูหลักที่ 3 สถานการณ์ปัจจุบัน
+         $(".sub3").hide();
+        $("#main3").click(function(){
+          $(".sub3").toggle();
+        });
+
+         //เมนูหลักที่ 4 แหล่งข้อมูลอื่นๆ
+        $("#main4").click(function(){
+          
+        });
+
+         //เมนูหลักที่ 5 คลังภาพ
+         
+        $("#main5").click(function(){
+          
+        });
+
+         //เมนูหลักที่ 6 อื่นๆ
+         
+         $("#main6").click(function(){
+          
+        });
+
+        $("#substory2,#substory3,#substory4,#substory5,#substory6,#substory7,#substory8,#substory9,#substory10,#substory11,#substory12,#substory13").hide();
+        //เมนูย่อยที่ 1 หมู่บ้านชุมชน
+        $("#story1").click(function(){
+            $("#substory1").show();
+            $("#substory2,#substory3,#substory4,#substory5,#substory6,#substory7,#substory8,#substory9,#substory10,#substory11,#substory12,#substory13").hide();
+          });
+
+        //เมนูย่อยที่ 2 อัตลักษณ์ภาษา
+        $("#story2").click(function(){
+            $("#substory2").show();
+            $("#substory1,#substory3,#substory4,#substory5,#substory6,#substory7,#substory8,#substory9,#substory10,#substory11,#substory12,#substory13").hide();
+          });
+        
+        //เมนูย่อยที่ 3 ประวัติชุมชน
+        $("#story3").click(function(){
+            $("#substory3").show();
+            $("#substory2,#substory1,#substory4,#substory5,#substory6,#substory7,#substory8,#substory9,#substory10,#substory11,#substory12,#substory13").hide();
+          });
+
+           //เมนูย่อยที่ 4 สถานที่สำคัญทางวัฒนธรรม
+        $("#story4").click(function(){
+            $("#substory4").show();
+            $("#substory2,#substory1,#substory3,#substory5,#substory6,#substory7,#substory8,#substory9,#substory10,#substory11,#substory12,#substory13").hide();
+          });
+
+           //เมนูย่อยที่ 5 ความเชื่อและพิธีกรรม
+        $("#story5").click(function(){
+            $("#substory5").show();
+            $("#substory2,#substory1,#substory4,#substory3,#substory6,#substory7,#substory8,#substory9,#substory10,#substory11,#substory12,#substory13").hide();
+          });
+
+            //เมนูย่อยที่ 6 นิเวศวัฒนธรรม
+        $("#story6").click(function(){
+            $("#substory6").show();
+            $("#substory2,#substory1,#substory4,#substory5,#substory3,#substory7,#substory8,#substory9,#substory10,#substory11,#substory12,#substory13").hide();
+          });
+
+          //เมนูย่อยที่ 7 อื่นๆ
+        $("#story7").click(function(){
+            $("#substory7").show();
+            $("#substory2,#substory1,#substory4,#substory5,#substory6,#substory3,#substory8,#substory9,#substory10,#substory11,#substory12,#substory13").hide();
+          });
+
+          //เมนูย่อยที่ 8 การเปลี่ยนแปลงทางวัฒนธรรม
+        $("#story8").click(function(){
+            $("#substory8").show();
+            $("#substory2,#substory1,#substory4,#substory5,#substory7,#substory3,#substory6,#substory9,#substory10,#substory11,#substory12,#substory13").hide();
+          });
+
+          //เมนูย่อยที่ 9 การเปลี่ยนแปลงทางสังคม
+        $("#story9").click(function(){
+            $("#substory9").show();
+            $("#substory2,#substory1,#substory4,#substory5,#substory3,#substory3,#substory8,#substory3,#substory10,#substory11,#substory12,#substory13").hide();
+          });
+
+          //เมนูย่อยที่ 10 การรวมทางสังคม
+        $("#story10").click(function(){
+            $("#substory10").show();
+            $("#substory2,#substory1,#substory4,#substory5,#substory3,#substory6,#substory8,#substory9,#substory7,#substory11,#substory12,#substory13").hide();
+          });
+
+          //เมนูย่อยที่ 11 แหล่งข้อมูลอิ่นๆ
+        $("#story11").click(function(){
+            $("#substory11").show();
+            $("#substory2,#substory1,#substory4,#substory5,#substory3,#substory6,#substory8,#substory9,#substory10,#substory7,#substory12,#substory13").hide();
+          });
+
+           //เมนูย่อยที่ 12 คลังภาพ
+        $("#story12").click(function(){
+            $("#substory12").show();
+            $("#substory2,#substory1,#substory4,#substory5,#substory3,#substory6,#substory8,#substory9,#substory10,#substory7,#substory11,#substory13").hide();
+          });
+
+           //เมนูย่อยที่ 13 อื่นๆ
+        $("#story13").click(function(){
+            $("#substory13").show();
+            $("#substory2,#substory1,#substory4,#substory5,#substory3,#substory6,#substory8,#substory9,#substory10,#substory7,#substory12,#substory11").hide();
+          });
+
+    
+          
+
+      });
+    </script>
+
+    <title>ชือชุมชน</title>
+  </head>
+  <body class="">
+
+    
+    <nav class="blue darken-2" style="height:90px; line-height: 90px;">
+      <div class="nav-wrapper transparent">
+        <a href="index.html" class="brand-logo black-text "><img src="img/logo/ethnicSKN_logo.png" alt="" style="width:256px; padding:8px; margin-left:20px;"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text" style="margin-top:15px; ">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html" class="font-kanit white-text menu"><h5>ชุมชนชาติพันธุ์</h5></a></li>
+          <li><a href="location.html" class="font-kanit white-text menu"><h5>สถานที่ทางวัฒนธรรม</h5></a></li>
+          <li><a href="#" class="font-kanit white-text menu"><h5>History of land use</h5></a></li>
+          <li><a href="media.html" class="font-kanit white-text menu"><h5>สื่อเผยแพร่</h5></a></li>
+          <li><a href="contact.html" class="font-kanit white-text menu"><h5>ติดต่อ</h5></a></li>
+          <li><a href="#" class="font-kanit black-text btn white" style="border-radius:20px; width:150px; font-size: 20px;"><i class="material-icons left">search</i>search</a></li>
+        </ul>
+        <ul class="sidenav " id="mobile-demo">
+            <li><a href="index.html" class="font-kanit black-text" style="font-size:20px; height:70px; padding-top:15px;">ชุมชนชาติพันธุ์</a></li>
+            <li><a href="location.html" class="font-kanit black-text" style="font-size:20px; height:70px; padding-top:15px;">สถานที่ทางวัฒนธรรม</a></li>
+            <li><a href="#" class="font-kanit black-text" style="font-size:20px; height:70px; padding-top:15px;">History of land use</a></li>
+            <li><a href="media.html" class="font-kanit black-text" style="font-size:20px; height:70px; padding-top:15px;">สื่อเผยแพร่</a></li>
+            <li><a href="contact.html" class="font-kanit black-text" style="font-size:20px; height:70px; padding-top:15px;">ติดต่อ</a></li>
+            <li><a href="#" class="font-kanit black-text btn white" style="border-radius:20px;  font-size: 20px;"><i class="material-icons left">search</i>search</a></li>
+          </ul>        
+      </div>
+    </nav>
+
+  <div class="row">
+      <div class="col s12 m5 l4" style="margin-top:30px;">
+            <div class="col s12 m12 l12" style="padding:18px; border:1px solid black;">
+                    <h4 class="font-kanit ">มอญลุ่มน้ำท่าจีน</h4>
+                    <ul style="">
+                        <li id="main1"><a href="#" class="font-kanit black-text"><h5><i class="material-icons left">add</i>ข้อมูลพื้นฐาน</h5></a></li>
+                        <li class="sub1"><a href="#" class="font-kanit black-text" id="story1"><h6><i class="material-icons left submenu" >remove</i>หมู่บ้านในกลุ่มชุมชน และ ตำแหน่งที่ตั้ง</h6></a></li>
+                        <li class="sub1"><a href="#" class="font-kanit black-text" id="story2"><h6><i class="material-icons left submenu" >remove</i>อัตลักษณ์ทางภาษา</h6></a></li>
+                        <li class="sub1"><a href="#" class="font-kanit black-text" id="story3"><h6><i class="material-icons left submenu" >remove</i>ประวัติชุมชน</h6></a></li>
+                      </ul>
+                      <ul style="">
+                            <li id="main2"><a href="#" class="font-kanit black-text"><h5><i class="material-icons left">add</i>ข้อมูลมรดกวัฒนธรรม</h5></a></li>
+                            <li class="sub2"><a href="#" class="font-kanit black-text" id="story4"><h6><i class="material-icons left submenu" >remove</i>สถานที่สำคัญทางวัฒนธรรม</h6></a></li>
+                            <li class="sub2"><a href="#" class="font-kanit black-text" id="story5"><h6><i class="material-icons left submenu" >remove</i>ความเชื่อและพิธีกรรม</h6></a></li>
+                            <li class="sub2"><a href="#" class="font-kanit black-text" id="story6"><h6><i class="material-icons left submenu" >remove</i>นิเวศวัฒนธรรมและภูมิสังคม</h6></a></li>
+                            <li class="sub2"><a href="#" class="font-kanit black-text" id="story7"><h6><i class="material-icons left submenu" >remove</i>อื่นๆ</h6></a></li>
+                          </ul>
+                          <ul style="">
+                                <li id="main3"><a href="#" class="font-kanit black-text" ><h5><i class="material-icons left">add</i>สถานการณ์ปัจจุบัน</h5></a></li>
+                                <li class="sub3"><a href="#" class="font-kanit black-text" id="story8"><h6><i class="material-icons left submenu" >remove</i>การเปลี่ยนแปลงทางวัฒนธรรม</h6></a></li>
+                                <li class="sub3"><a href="#" class="font-kanit black-text" id="story9"><h6><i class="material-icons left submenu" >remove</i>การเปลี่ยนแปลงทางภูมิสังคม</h6></a></li>
+                                <li class="sub3"><a href="#" class="font-kanit black-text" id="story10"><h6><i class="material-icons left submenu" >remove</i>การรวมกลุ่มทางสังคม</h6></a></li>
+                              </ul>
+                              <ul style="">
+                                <li id="main4"><a href="#" class="font-kanit black-text"  id="story11" ><h5><i class="material-icons left">add</i>แหล่งข้อมูลอื่นๆ</h5></a></li>
+                              </ul>
+                              <ul style="">
+                                <li id="main5"><a href="#" class="font-kanit black-text"  id="story12"><h5><i class="material-icons left"></i>คลังภาพ</h5></a></li>
+                            </ul>
+                            <ul style="">
+                                <li id="main6"><a href="#" class="font-kanit black-text"  id="story13"><h5><i class="material-icons left"></i>อื่นๆ</h5></a></li>
+                            </ul>
+
+                      
+      </div> 
+      </div>
+      <div class="col s12 m7 l8" style="margin-top:30px;">
+          <div class="col s12 m12 l12" style="padding:18px; ">
+            <div id="substory1">
+              <h5 class="font-kanit">หมู่บ้านที่อยู่ในกลุ่มชุมชนและที่ตั้ง</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+            <div id="substory2">
+              <h5 class="font-kanit">อัตลักษณ์ทางภาษา</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+            <div id="substory3">
+              <h5 class="font-kanit">ประวัติชุมชน</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+            <div id="substory4">
+              <h5 class="font-kanit">สถานที่สำคัญทางวัฒนธรรม</h5>
+              <p style="font-size:20px;">
+                  <ul>
+                    <li class="font-kanit"><a href="#" class="black-text" style="font-size:25px;">- awdsaddads</a></li>
+                    <li class="font-kanit"><a href="#" class="black-text" style="font-size:25px;">- awdsaddads</a></li>
+                    <li class="font-kanit"><a href="#" class="black-text" style="font-size:25px;">- awdsaddads</a></li>
+                    <li class="font-kanit"><a href="#" class="black-text" style="font-size:25px;">- awdsaddads</a></li>
+                  </ul>
+              </p>
+            </div>
+            <div id="substory5">
+              <h5 class="font-kanit">ความเชื่อและพิธีกรรม</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+            <div id="substory6">
+              <h5 class="font-kanit">นิเวศวัฒนธรรมและภูมิสังคม</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+            <div id="substory7">
+              <h5 class="font-kanit">อื่นๆ</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+            <div id="substory8">
+              <h5 class="font-kanit">การเปลี่ยนแปลงทางวัฒนธรรม</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+            <div id="substory9">
+              <h5 class="font-kanit">การเปลี่ยนแปลงทางภูมิสังคม</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+            <div id="substory10">
+              <h5 class="font-kanit">การรวมกลุ่มทางสังคม</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+            <div id="substory11">
+              <h5 class="font-kanit">แหล่งข้อมูลอิ่นๆ</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+            <div id="substory12">
+              <h5 class="font-kanit">คลังภาพ</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+            <div id="substory13">
+              <h5 class="font-kanit">อื่นๆ</h5>
+              <p style="font-size:20px;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia beatae repudiandae 
+                  corporis eveniet esse, pariatur voluptates veniam, quam
+                  placeat maxime similique illo qui incidunt praesentium 
+                  saepe magni architecto laudantium? Ducimus.
+              </p>
+            </div>
+              
+          </div>
+      </div>
+  </div>
+ 
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>

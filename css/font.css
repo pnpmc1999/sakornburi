@@ -1,0 +1,54 @@
+/*THAI*/
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+@import url('https://fonts.googleapis.com/css?family=Sriracha');
+@import url('https://fonts.googleapis.com/css?family=Mali');
+@import url('https://fonts.googleapis.com/css?family=Pattaya');
+/*ENGLISH*/
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.font-kanit
+{
+  font-family: 'Kanit', sans-serif;
+}
+
+.font-kanit-shadow
+{
+ font-family: 'Kanit', sans-serif;
+  text-shadow: 2px 2px #808080;
+}
+
+
+
+
+.font-sriracha
+{
+  font-family: 'Sriracha', cursive;
+}
+
+
+
+
+.font-baloo
+{
+  font-family: 'Baloo Bhaijaan', cursive;
+}
+
+
+.font-poppins
+{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.font-mali
+{
+  font-family: 'Mali', cursive;
+}
+
+
+.font-pattaya
+{
+  font-family: 'Pattaya', sans-serif;
+}
